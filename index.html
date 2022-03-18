@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Browser Combat Simulator 2022</title>
+        <meta name="author" content="Matthew">
+        <meta description="difficult browser combat game">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="internals/style.css">
+
+    </head>
+
+    <body>
+        <div id="GameMain">
+            <h1><u>Combat Simulator <span id="freeKit">2022</span></u></h1>
+            <div id="charInfo">
+                <input type="text" id="Name" placeholder="Character Name" length="15" value="Martha Stewart">
+                <button id="SetName">Name Your Hero</button>
+            </div>
+            <div id="Screen" onmousedown="return false" onselectstart="return false" onrightclick>
+                <textarea id="GameScreen" rows="10" cols="40"></textarea>
+            </div>
+            <div>
+                <p id="Stats" onmousedown="return false" onselectstart="return false" onrightclick>HP: 20 - Energy: 100 - MedKit: 3</p>
+            </div>
+            <div id="Inputs" onmousedown="return false" onselectstart="return false">
+                <button id="Attack" name="answer" disabled>Melee Attack!</button>
+                <button id="Spell" name="answer" disabled>Cast Spell! (-33MP)</button>
+                <button id="Heal"name="answer" disabled>Heal!</button>
+                <button id="Guard" name="answer" disabled>Guard!</button>
+                <button id="Restart">Restart!</button>
+                <button id="GodMode" style="border: none !important; background: transparent;" disabled>⠀</button>
+            </div>
+        </div>
+        <div id="photoContainer">
+            <img src="internals/PatchPic.png" id="Patchouli">
+            <p>I don't own this image.</p>
+        </div>
+        <script src="internals/HeroGame.js"></script>
+    </body>
+</html>
